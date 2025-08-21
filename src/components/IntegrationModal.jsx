@@ -1,9 +1,11 @@
+// Fichier: src/components/IntegrationModal.jsx
+
 import React from 'react';
 import './IntegrationModal.css';
 
 function IntegrationModal({ isOpen, onClose }) {
   if (!isOpen) {
-    return null; // N'affiche rien si le modal n'est pas ouvert
+    return null;
   }
 
   return (
@@ -15,7 +17,8 @@ function IntegrationModal({ isOpen, onClose }) {
           Copiez le code ci-dessous et collez-le sur votre site, juste avant la
           balise de fermeture <code>&lt;/body&gt;</code>.
         </p>
-        <pre><code>&lt;script src="https://VOTRE-DOMAINE.com/script.js" defer&gt;&lt;/script&gt;</code></pre>
+        {/* MISE À JOUR ICI */}
+        <pre><code>&lt;script src="https://kevimage-backend.onrender.com/script.js" defer&gt;&lt;/script&gt;</code></pre>
       </div>
     </div>
   );
